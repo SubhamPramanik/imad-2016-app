@@ -63,6 +63,14 @@ var articles = {
     },
 };
 
+var names = [];
+app.get('/student-name',function(req,res){
+    var name = req.query.name;
+    
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
+
 var counter=0;
 app.get('/counter', function (req, res) {
     counter = counter + 1;
