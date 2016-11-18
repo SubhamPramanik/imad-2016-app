@@ -13,6 +13,6 @@ button.onclick = function () {
 			}
 		}
 	};
-	request.open('GET','subhampramanik.imad.hasura-app.io/counter', true);
+	request.open('GET','http://subhampramanik.imad.hasura-app.io/counter', true);
 	request.send(null);
 };
